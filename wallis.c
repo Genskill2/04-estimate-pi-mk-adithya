@@ -24,3 +24,15 @@ int main(void) {
   }
 }
 
+float wallis_pi(int n) {
+    int num, den;
+    float product = 1, res;
+    for (int i = 1; i < n; i++){
+        num = 4*i*i;
+        den = (4*i*i) - 1;
+        product *= num;
+        product /= den;
+    }
+    res = 2*product;
+    return res;
+}
