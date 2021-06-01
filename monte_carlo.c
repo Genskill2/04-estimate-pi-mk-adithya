@@ -45,8 +45,8 @@ float mc_pi(int n){
     for (int i = 0; i <= n; i++){
         x_1 = frandom();
         y_1 = frandom();
-        x_2 = x*x;
-        y_2 = y*y;
+        x_2 = x_1*x_1;
+        y_2 = y_1*y_1;
         r = sqrt(x_2 + y_2);
         if (r <= 1.0){
             num += 1;
